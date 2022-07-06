@@ -22,32 +22,36 @@ const HomeContainer = () => {
             />
           </div>
         </div>
-        <div>
-          <p className="text-[2.5rem] font-bold tracking-wide text-headingColor">
-            The Fastest Delivery in
-            <span className="text-orange-600 text-[3rem]"> Your City</span>
-          </p>
-          <p className="text-base text-textColor text-center md:text-left">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <button
-            type="button"
-            className="bg-gradient-to-br from-orange-400 to-orange-500 w-full px-4 py-2 rounded-lg mt-3  hover:shadow-lg transition-all ease-in-out duration-100 md:w-auto"
-          >
-            Order Now
-          </button>
-        </div>
+
+        <p className="text-[2.5rem] lg:text-[4.5rem] font-bold tracking-wide text-headingColor">
+          The Fastest Delivery in
+          <span className="text-orange-600 text-[3rem] lg:text-[5rem]">
+            Your City
+          </span>
+        </p>
+
+        <p className="text-base text-textColor text-center md:text-left md:w-[80%]">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima velit
+          eaque fugit distinctio est nam voluptatum architecto, porro iusto
+          deserunt recusandae ipsa minus eos sunt, dolores illo repellat facere
+          suscipit!
+        </p>
+
+        <button
+          type="button"
+          className="bg-gradient-to-br from-orange-400 to-orange-500 w-full md:w-auto px-4 py-2  rounded-lg hover:shadow-lg transition-all ease-in-out duration-100"
+        >
+          Order Now
+        </button>
       </div>
-      <div className="p-2 flex-1 flex items-center relative">
+      <div className="py-2 flex-1 flex items-center relative">
         <img
           src={HeroBg}
-          className="ml-auto h-420 w-full lg:w-auto lg:h-650"
+          className=" ml-auto h-420 w-full lg:w-auto lg:h-650"
           alt="hero-bg"
         />
-        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-32  py-4 gap-4 flex-wrap">
+
+        <div className="w-full h-full absolute top-0 left-0 flex items-center justify-center lg:px-40  py-4 gap-4 flex-wrap">
           {heroData &&
             heroData.map((n) => (
               <div
